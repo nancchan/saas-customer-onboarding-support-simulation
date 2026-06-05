@@ -2,11 +2,9 @@
 
 ## 💡 Project Story
 
-This project simulates a real-world SaaS customer data platform used for onboarding, CRM synchronization, and reporting.
+This project simulates a production SaaS customer data platform where I acted as a Technical Support / Operations Engineer responsible for investigating and resolving data, API, and CRM integration failures.
 
-It demonstrates how Support Engineers and Implementation Specialists troubleshoot system issues across multiple layers.
-
-The focus is on system behavior, debugging, and operational thinking — not just writing queries.
+The focus is system behavior, debugging, and operational thinking across multiple layers — not just writing queries.
 
 ---
 
@@ -14,58 +12,57 @@ The focus is on system behavior, debugging, and operational thinking — not jus
 
 User → API → Database → CRM → Dashboard
 
-Each layer represents a potential failure point that requires investigation.
+Each layer represents a potential failure point that requires investigation and debugging.
 
 ---
 
 ## 🎯 Business Problem
 
-In SaaS companies, customer data frequently breaks due to:
+In production SaaS environments, customer data flows through multiple systems and can break at any layer.
 
-- API validation failures
-- CRM sync issues
-- duplicate customer records
-- missing or invalid data
-- reporting mismatches
+This project simulates real operational failures such as:
 
-This project simulates those production issues and demonstrates how they are investigated and resolved.
+- API validation failures blocking onboarding
+- CRM sync failures due to missing or invalid data
+- Duplicate customer creation from retry logic
+- Data inconsistencies between database and reporting systems
 
 ---
 
 ## 🧠 Skills Demonstrated
 
-- SQL querying, joins, and debugging
+- SQL troubleshooting and reporting
 - Data quality validation
-- API troubleshooting concepts
-- CRM field mapping (Salesforce-style)
+- API failure analysis
+- CRM field mapping (Salesforce-style systems)
 - Incident response (SEV1 / SEV2 thinking)
 - Root cause analysis (RCA)
 - Runbook creation
-- Cross-system troubleshooting
+- Cross-system debugging
 
 ---
 
 ## 📁 Project Structure
 
-- sql → data validation, joins, reporting, debugging
-- excel → data cleaning & quality checks
+- sql → validation, joins, reporting, debugging
+- excel → onboarding data cleaning
 - api → API failure simulation
-- crm → field mapping & sync rules
-- incidents → production-style incident reports
-- runbooks → step-by-step troubleshooting guides
-- system_design → SaaS architecture flow
+- crm → field mapping & sync logic
+- incidents → production incident reports
+- runbooks → troubleshooting guides
+- system_design → architecture overview
 - dashboards → reporting layer simulation
-- security → authentication & access concepts
+- security → authentication concepts
 
 ---
 
 ## 🚨 Example Incidents Simulated
 
-- CRM sync failure due to missing email field
-- Duplicate customers caused by retry logic
+- SEV-2 CRM sync failure due to missing email validation
+- SEV-2 duplicate customers caused by API retry logic
 - API validation errors (400 responses)
-- Data mismatch between database and CRM
-- Dashboard reporting inconsistencies
+- Missing orders in reporting layer
+- Data mismatches between systems
 
 ---
 
@@ -73,7 +70,7 @@ This project simulates those production issues and demonstrates how they are inv
 
 This project demonstrates how SaaS systems behave in production and how engineers:
 
-- identify issues
-- isolate failures across system layers
+- identify issues across system layers
+- isolate root causes
 - resolve incidents
 - prevent recurrence
