@@ -1,122 +1,178 @@
-SaaS Data Operations & Integration Platform
+# SaaS Data Operations & Integration Platform
 
-⸻
-
-Overview
+## Overview
 
 This project simulates a SaaS backend system showing how customer data flows through a real production-style pipeline:
 
 API → Database → CRM → Dashboard
 
-It demonstrates real-world Technical Support and Integration Engineering workflows including data validation, system debugging, and incident resolution.
+It demonstrates real-world Technical Support Engineering and Integration Engineering workflows including data validation, system troubleshooting, incident management, and root cause analysis.
 
-⸻
+---
 
-System Architecture
+## Project Goal
+
+The goal of this project is to simulate a real-world SaaS environment where customer data moves across multiple systems and operational issues must be investigated across APIs, databases, CRM integrations, and reporting dashboards.
+
+The repository demonstrates how Technical Support Engineers, Integration Engineers, and Application Support Engineers diagnose incidents, validate data quality, perform SQL investigations, and restore system functionality.
+
+---
+
+## System Architecture
 
 User → API Layer → Database → CRM System → Dashboard
 
-Each layer is responsible for validating, transforming, and reporting customer data across the system.
+Each layer is responsible for validating, transforming, storing, synchronizing, and reporting customer data across the platform.
 
-⸻
+---
 
-Core Components
+## Repository Structure
 
-API Layer
+text api/           API errors and validation scenarios crm/           CRM mappings and integration documentation dashboard/     Reporting and troubleshooting workflows data/          Raw and cleaned customer datasets incidents/     Production-style incident simulations monitoring/    Operational metrics and health checks runbooks/      Incident resolution procedures security/      Authentication and authorization models sql/           Investigation and reporting queries docs/          Architecture and troubleshooting documentation 
 
-* REST API (GET, POST, PUT, DELETE)
-* JSON request/response handling
-* Input validation and error handling (400 / 422 errors)
+---
 
-⸻
+## Core Components
 
-SQL Layer
+### API Layer
 
-* Data validation and cleanup
-* Duplicate detection
-* JOIN operations for cross-table analysis
-* Aggregation for reporting (COUNT, GROUP BY)
-* Root cause analysis support
+- REST API operations (GET, POST, PUT, DELETE)
+- JSON request and response handling
+- Input validation and error handling
+- API authentication and authorization
+- HTTP status code troubleshooting (400, 401, 403, 422)
 
-⸻
+### SQL Layer
 
-CRM Integration Layer
+- Data validation and quality checks
+- Duplicate detection
+- JOIN operations for investigation workflows
+- Aggregation and reporting queries
+- Root cause analysis support
 
-* Salesforce-style customer model
-* Field mapping between database and CRM
-* Sync failure handling and retry scenarios
+### CRM Integration Layer
 
-⸻
+- Salesforce-style customer data model
+- Database-to-CRM field mapping
+- CRM synchronization workflows
+- Sync failure detection and recovery
 
-Dashboard Layer
+### Dashboard Layer
 
-* Aggregated business reporting
-* Data visualization logic
-* Troubleshooting of missing or incorrect metrics
+- Business reporting and analytics
+- Aggregated customer metrics
+- Dashboard troubleshooting
+- Data reconciliation and validation
 
-⸻
+---
 
-Incident Management
+## Sample Incidents Investigated
 
-This project includes SEV-2 production-style incidents:
+### 1. CRM Sync Failure
 
-* CRM sync failure due to missing email field
-* Duplicate customer creation due to API retry logic
+Root Cause: Missing email field
 
-Each incident includes:
+Impact: Customer records failed to synchronize with CRM
 
-* Root cause analysis (RCA)
-* Impact assessment
-* Resolution steps
-* Prevention strategy
+Resolution: Data validation, record correction, and reprocessing
 
-⸻
+### 2. Duplicate Customer Creation
 
-Troubleshooting Flow
+Root Cause: Missing idempotency controls during API retries
 
-When issues occur:
+Impact: Duplicate CRM contacts and inaccurate reporting
+
+Resolution: Duplicate detection analysis and prevention strategy
+
+### 3. Missing Dashboard Records
+
+Root Cause: Upstream synchronization failures
+
+Impact: Incomplete business reporting
+
+Resolution: Data reconciliation and cross-system investigation
+
+---
+
+## Troubleshooting Workflow
+
+When issues occur, investigations follow the customer data journey:
 
 API → Database → CRM → Dashboard
 
-1. Validate API request logs
-2. Check database records (SQL)
-3. Inspect CRM sync status
-4. Verify dashboard aggregation logic
-5. Identify root cause and fix upstream
+Typical troubleshooting process:
 
-⸻
+1. Validate API requests and error logs
+2. Verify database records using SQL
+3. Inspect CRM synchronization status
+4. Review dashboard reporting logic
+5. Identify root cause
+6. Implement fix and verify resolution
 
-Security Model
+---
 
-* API authentication (API keys, tokens)
-* Authorization (role-based access control)
-* Roles: Admin, Manager, User
-* Handles 401 (Unauthorized) and 403 (Forbidden) errors
+## Security Model
 
-⸻
+- API authentication (API keys and tokens)
+- Role-Based Access Control (RBAC)
+- User authorization management
 
-Tools & Technologies
+### Roles
 
-* REST APIs
-* SQL (PostgreSQL-style queries)
-* Postman (API testing)
-* JSON
-* CRM systems (Salesforce model)
-* Incident management workflows
+- Admin
+- Manager
+- User
 
-⸻
+### Common Security Scenarios
 
-Key Skills Demonstrated
+- 401 Unauthorized
+- 403 Forbidden
+- Access control validation
 
-* API debugging and troubleshooting
-* SQL querying and data validation
-* CRM integration analysis
-* Root cause analysis (RCA)
-* System design thinking
-* Cross-system debugging (API → DB → CRM → Dashboard)
+---
 
-⸻
+## Monitoring & Operations
 
-Summary
+The platform includes operational monitoring simulations:
 
-This project simulates real SaaS production environments where data flows across multiple systems, and engineers must debug failures across API, database, CRM, and reporting layers.
+- API health metrics
+- CRM synchronization metrics
+- Dashboard refresh monitoring
+- Service availability tracking
+- Error rate analysis
+
+---
+
+## Tools & Technologies
+
+- REST APIs
+- SQL (PostgreSQL-style queries)
+- JSON
+- Postman
+- CRM Systems (Salesforce-style model)
+- Incident Management
+- Data Quality Validation
+- Root Cause Analysis (RCA)
+
+---
+
+## Key Skills Demonstrated
+
+- API debugging and troubleshooting
+- SQL querying and data validation
+- CRM integration analysis
+- Data reconciliation
+- Incident response workflows
+- Root Cause Analysis (RCA)
+- System design thinking
+- Cross-system debugging
+- Monitoring and operational support
+- Technical documentation and runbook creation
+
+---
+
+## Summary
+
+This project demonstrates end-to-end SaaS data operations by simulating customer onboarding, CRM synchronization, dashboard reporting, and production incident response workflows.
+
+It showcases practical Technical Support Engineering skills including API troubleshooting, SQL investigation, CRM integration debugging, root cause analysis, data reconciliation, and cross-system problem solving across a modern SaaS architecture.
