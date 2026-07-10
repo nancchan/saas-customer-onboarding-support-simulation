@@ -1,25 +1,40 @@
-# Salesforce Admin Project - DreamHouse Data Management & Reporting
+# Salesforce CRM Administration Project
 
 ## Project Overview
 
-This project demonstrates Salesforce Administrator skills including:
+This project demonstrates Salesforce Administrator fundamentals through a simulated customer data management workflow.
 
-- Custom object relationships
-- Schema Builder data modeling
-- Lookup and Master-Detail relationships
-- Data import and field mapping
-- Salesforce Reports
-- Salesforce Dashboards
-
-The goal of this project was to practice building and managing Salesforce data structures, importing records, and creating reporting solutions.
+The goal was to practice organizing CRM data, importing records, creating reports, and building dashboards to visualize customer information.
 
 ---
 
-# Salesforce Data Model
+# Salesforce Workflow
+
+Customer Data (CSV)
+
+↓
+
+Salesforce Data Import Wizard
+
+↓
+
+Salesforce Records
+
+↓
+
+Reports
+
+↓
+
+Dashboard Visualization
+
+---
+
+# Salesforce Configuration
 
 ## Schema Builder
 
-Created and reviewed object relationships using Salesforce Schema Builder.
+Used Salesforce Schema Builder to review and understand object relationships and CRM data structure.
 
 Objects included:
 
@@ -27,28 +42,15 @@ Objects included:
 - Property
 - Favorite
 
-Relationships created:
-
-- Favorite → Contact (Lookup Relationship)
-- Favorite → Property (Master-Detail Relationship)
-
 Screenshot:
 
 ![Schema Builder](screenshots/schema_builder.png)
 
 ---
 
-# Custom Object Relationships
+# Field Relationships
 
-Created relationship fields using Salesforce Object Manager.
-
-## Lookup Relationship
-
-Favorite records are connected to Contacts who select favorite properties.
-
-## Master-Detail Relationship
-
-Property records act as the master object with Favorite records as related details.
+Reviewed Salesforce field configuration and relationship settings using Salesforce Object Manager.
 
 Screenshot:
 
@@ -58,34 +60,40 @@ Screenshot:
 
 # Data Import
 
-Imported Account data using Salesforce Data Import Wizard.
+Imported customer/account information into Salesforce using Data Import Wizard.
 
-Steps completed:
+Completed:
 
-- Prepared CSV data
-- Mapped CSV fields to Salesforce fields
-- Imported Account records
-- Verified imported records
+- CSV preparation
+- Field mapping
+- Data validation
+- Record import
 
-## Field Mapping
+---
+
+## Data Import Field Mapping
 
 Screenshot:
 
 ![Data Import Mapping](screenshots/data_import_mapping.png)
 
-## Import Results
+---
+
+## Data Import Results
+
+Verified imported records after completing the data load process.
 
 Screenshot:
 
-![Data Import Results](screenshots/data_import_result.png)
+![Data Import Result](screenshots/data_import_result.png)
 
 ---
 
-# Salesforce Reporting
+# Salesforce Report
 
-Created an Account report to analyze customer data.
+Created a Salesforce report to analyze customer account information.
 
-Report includes:
+Report fields included:
 
 - Account Name
 - Industry
@@ -99,12 +107,13 @@ Screenshot:
 
 # Salesforce Dashboard
 
-Created a dashboard using the Account report.
+Created a Salesforce dashboard using report data.
 
-Dashboard visualization:
+Dashboard includes:
 
-- Accounts grouped by Industry
-- Donut chart visualization
+- Customer account analysis
+- Industry visualization
+- Donut chart reporting
 
 Screenshot:
 
@@ -112,24 +121,23 @@ Screenshot:
 
 ---
 
-# Salesforce Admin Skills Demonstrated
+# Salesforce Skills Demonstrated
 
-✅ Object Modeling  
-✅ Schema Builder  
-✅ Custom Relationships  
-✅ Lookup Relationships  
-✅ Master-Detail Relationships  
-✅ Data Import Wizard  
-✅ Field Mapping  
-✅ Reports  
-✅ Dashboards  
+- Salesforce Lightning Experience
+- Schema Builder
+- Object Configuration
+- Field Relationships
+- Data Import Wizard
+- Field Mapping
+- Reports
+- Dashboards
+- CRM Data Management
 
 ---
 
 # Tools Used
 
-- Salesforce Lightning Experience
 - Salesforce Trailhead
-- Data Import Wizard
-- Schema Builder
-- Reports & Dashboards
+- Salesforce Lightning Experience
+- Salesforce Object Manager
+- Salesforce Reports & Dashboards
