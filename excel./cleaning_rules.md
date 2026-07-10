@@ -1,18 +1,75 @@
-# Excel Data Cleaning Rules (SaaS Onboarding Dataset)
+# Excel Customer Data Cleaning Rules
 
-## CLEANING RULES APPLIED
+## Overview
 
-### Rule 1: Deduplication
-- Remove duplicates using Name + Email combination
-- Keep first occurrence as source of truth
+This document explains the data cleaning steps performed before customer information is used for CRM onboarding.
 
-### Rule 2: Email validation
-- Must contain '@'
-- Invalid emails flagged or corrected
+The goal was to improve data quality and prepare customer records for import.
 
-### Rule 3: Missing values handling
-- Replace missing phone/email with "UNKNOWN"
+---
 
-### Rule 4: Standardization
-- Trim whitespace from all text fields
-- Normalize company names (Zoom vs zoom → Zoom)
+## Cleaning Rules Applied
+
+### 1. Duplicate Identification
+
+Problem:
+
+Multiple records existed for the same customer.
+
+Action:
+
+- Compared customer name and email fields.
+- Identified duplicate records.
+- Kept the original record as the source of truth.
+
+---
+
+### 2. Email Validation
+
+Problem:
+
+Some customer emails contained formatting issues.
+
+Examples:
+
+- Missing @ symbol
+- Extra spaces
+- Incorrect formatting
+
+Action:
+
+Reviewed and corrected invalid email formats.
+
+---
+
+### 3. Missing Values
+
+Problem:
+
+Some records had missing phone numbers or email information.
+
+Action:
+
+Replaced missing values with "UNKNOWN" to clearly identify incomplete records.
+
+---
+
+### 4. Data Standardization
+
+Problem:
+
+Inconsistent formatting created potential CRM import issues.
+
+Action:
+
+Standardized:
+
+- Company names
+- Spacing
+- Text formatting
+
+---
+
+## Result
+
+The cleaned dataset was prepared for customer onboarding and Salesforce CRM mapping.
