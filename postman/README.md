@@ -1,77 +1,64 @@
-# Salesforce CRM Configuration
+# API Testing with Postman
 
 ## Overview
 
-This folder demonstrates Salesforce CRM concepts used during SaaS customer onboarding.
+This folder demonstrates basic REST API testing using Postman.
 
-The goal is to show how customer information can be organized, managed, and supported inside a CRM system.
+The purpose is to practice how SaaS support and implementation teams validate API communication and troubleshoot common issues.
 
----
+## Requests Tested
 
-## Salesforce Objects Used
+### GET Request
 
-### Lead
+Purpose:
 
-Represents a potential customer entering the sales process.
+Retrieve customer information from an API.
 
 Example:
 
-A customer signup creates a new lead record.
+GET request returning customer data.
 
 ---
 
-### Account
+### POST Request
 
-Represents a company or customer organization.
+Purpose:
 
----
+Send new customer information to an API.
 
-### Contact
+Example:
 
-Represents individuals associated with an account.
-
----
-
-### Opportunity
-
-Tracks potential sales activity and customer conversion.
+Simulating customer onboarding data submission.
 
 ---
 
-## Salesforce Admin Concepts Practiced
+### PUT Request
 
-- Objects and fields
-- Data relationships
-- Lead lifecycle
-- Reports
-- Dashboards
-- User permissions
-- Basic Flow automation
+Purpose:
 
----
+Update existing customer information.
 
-## Customer Lifecycle
+Example:
 
-Customer Signup
-
-↓
-
-Lead Created
-
-↓
-
-Lead Qualified
-
-↓
-
-Opportunity Created
-
-↓
-
-Account + Contact Created
+Simulating customer record updates.
 
 ---
 
-## Purpose
+### Error Testing
 
-This demonstrates how SaaS support and implementation teams understand CRM data structure and troubleshoot customer onboarding issues.
+Purpose:
+
+Understand how failed requests are investigated.
+
+Examples:
+
+- 400 Bad Request
+- 404 Not Found
+
+## Skills Practiced
+
+- REST API fundamentals
+- HTTP methods
+- HTTP status codes
+- Request and response analysis
+- Basic troubleshooting
