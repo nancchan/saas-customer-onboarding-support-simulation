@@ -1,93 +1,192 @@
-# Runbook: CRM Synchronization Troubleshooting
+# Runbook: CRM Sync Troubleshooting
 
 ## Purpose
 
-This runbook provides steps for investigating customer records that are missing or incorrect in Salesforce.
+This runbook provides a structured process for investigating customer records that fail to appear correctly in Salesforce during the onboarding process.
+
+The goal is to identify where the data flow failed, determine the cause, and document the resolution.
 
 ---
 
-# Problem
+# Issue Description
 
-Customer information exists in the onboarding process but does not appear correctly in CRM.
+A customer record was created during onboarding but is missing, incomplete, or incorrect in Salesforce.
+
+Example symptoms:
+
+- Customer exists in source data but not in Salesforce
+- Salesforce record is missing required information
+- Customer information does not match the source data
 
 ---
 
-# Investigation Steps
+# Investigation Process
 
-## Step 1: Verify Customer Information
+## Step 1: Verify Source Data
+
+Review the original customer information.
 
 Check:
 
 - Customer name
 - Email address
-- Company information
+- Company
 - Required fields
 
+Questions:
 
-Question:
+- Does the customer record exist?
+- Is the information complete?
+- Are there formatting issues?
 
-Is the source data complete?
+Tools:
+
+- Excel
+- CSV files
+
 
 ---
 
-## Step 2: Check Data Mapping
+## Step 2: Validate Customer Record Using SQL
 
-Verify:
+Investigate the customer record.
 
-Source Data → Salesforce Field
+Check for:
 
-Example:
+- Missing values
+- Incorrect information
+- Duplicate records
 
-Name → Lead Name
+Example checks:
 
-Email → Email
+- Does the customer exist?
+- Is the email field populated?
+- Are multiple records present?
 
-Company → Company
-
-
-Question:
-
-Is information being mapped correctly?
 
 ---
 
-## Step 3: Validate Salesforce Record
+## Step 3: Review API Communication
+
+Use Postman to understand API request and response behavior.
 
 Check:
 
-- Correct object used
-- Required fields populated
-- User permissions
-- Record visibility
+- Request data
+- Response status code
+- Error messages
+
+Common examples:
+
+200 OK
+
+Request completed successfully.
+
+400 Bad Request
+
+The submitted data may be missing required information.
+
+401 Unauthorized
+
+Authentication issue.
+
+403 Forbidden
+
+Permission issue.
 
 
 ---
 
-## Step 4: Document the Issue
+## Step 4: Verify Salesforce Mapping
+
+Confirm that customer information maps correctly into Salesforce.
+
+Example:
+
+Source Field | Salesforce Field
+
+Name | Lead Name
+
+Email | Email
+
+Company | Company
+
+
+Check:
+
+- Correct Salesforce object
+- Required fields completed
+- Data appears in the correct record
+
+
+---
+
+## Step 5: Document Resolution
 
 Record:
 
-- Problem
-- Cause
-- Fix
-- Prevention
+- Issue identified
+- Investigation steps completed
+- Root cause
+- Resolution
+- Prevention steps
 
 
 ---
 
-# Common Causes
+# Common Root Causes
 
-- Missing required fields
-- Incorrect field mapping
-- Duplicate records
-- Permission problems
+## Missing Required Fields
+
+Example:
+
+Customer email is missing.
+
+Impact:
+
+Salesforce rejects or creates incomplete records.
+
+
+## Incorrect Data Mapping
+
+Example:
+
+Source company field does not map correctly to Salesforce.
+
+
+## Duplicate Records
+
+Example:
+
+Same customer submitted multiple times.
+
+Impact:
+
+Duplicate CRM records and inaccurate reporting.
+
+
+## Permission Issues
+
+Example:
+
+User cannot access Salesforce records.
 
 
 ---
 
 # Resolution Examples
 
-- Correct missing customer information
-- Update mapping configuration
-- Reprocess failed records
-- Verify CRM access
+Possible resolutions:
+
+- Correct customer information
+- Update field mapping
+- Remove duplicate records
+- Verify Salesforce permissions
+- Re-test onboarding workflow
+
+
+---
+
+# Key Takeaway
+
+CRM synchronization issues should be investigated by following the customer data flow from the original source through each connected system until the failure point is identified.
