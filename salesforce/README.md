@@ -1,168 +1,135 @@
-# Salesforce Administration Practice
+# Salesforce Admin Project - DreamHouse Data Management & Reporting
 
-## Overview
+## Project Overview
 
-This section demonstrates Salesforce Administrator skills practiced through a SaaS customer onboarding simulation.
+This project demonstrates Salesforce Administrator skills including:
 
-The goal of this project is to understand how Salesforce administrators configure CRM data structures, manage customer information, and support business processes.
+- Custom object relationships
+- Schema Builder data modeling
+- Lookup and Master-Detail relationships
+- Data import and field mapping
+- Salesforce Reports
+- Salesforce Dashboards
 
-The Salesforce work focuses on:
-
-- Data modeling
-- Object relationships
-- Data management
-- CRM configuration
-- Salesforce platform navigation
-
----
-
-# Salesforce Data Modeling Practice
-
-Salesforce organizes information using objects, fields, and relationships.
-
-During practice, I worked with Salesforce data modeling concepts by creating custom objects and configuring relationships between records.
-
-Skills demonstrated:
-
-- Understanding Salesforce objects
-- Creating custom objects
-- Configuring object relationships
-- Managing related records
+The goal of this project was to practice building and managing Salesforce data structures, importing records, and creating reporting solutions.
 
 ---
 
-# Object Relationships Practice
-
-Created relationship fields between custom objects using Salesforce configuration tools.
-
-Relationship types practiced:
-
-## Lookup Relationship
-
-Created a Lookup Relationship between:
-
-**Favorite → Contact**
-
-Purpose:
-
-Allows a Favorite record to reference a related Contact record while maintaining a flexible relationship.
-
----
-
-## Master-Detail Relationship
-
-Created a Master-Detail Relationship between:
-
-**Favorite → Property**
-
-Purpose:
-
-Creates a dependent relationship where the detail record relies on the master record.
-
-This practice demonstrates how Salesforce administrators design connected data structures and manage relationships between objects.
-
----
-
-# Salesforce Data Import
-
-Practiced importing customer information into Salesforce using the Data Import Wizard.
-
-The purpose of this exercise was to understand how customer data can be prepared, mapped, and loaded into Salesforce during an onboarding process.
-
-Before importing, customer data was reviewed and standardized to improve data quality.
-
-Skills demonstrated:
-
-- Preparing CSV files
-- Field mapping
-- Data validation
-- Salesforce Data Import Wizard
-- Creating new Salesforce records
-
-Workflow:
-
-Customer Data (CSV)
-
-↓
-
-Data Cleaning and Validation
-
-↓
-
-Salesforce Data Import Wizard
-
-↓
-
-Account Records Created in Salesforce
-
----
-
-# Screenshots
+# Salesforce Data Model
 
 ## Schema Builder
 
-File:
+Created and reviewed object relationships using Salesforce Schema Builder.
 
-`schema_builder.png`
+Objects included:
 
-Demonstrates:
+- Contact
+- Property
+- Favorite
 
-- Salesforce object relationships
-- Data model visualization
-- Connections between related objects
+Relationships created:
 
----
+- Favorite → Contact (Lookup Relationship)
+- Favorite → Property (Master-Detail Relationship)
 
-## Relationship Fields
+Screenshot:
 
-File:
-
-`relationship_fields.png`
-
-Demonstrates:
-
-- Lookup Relationship configuration
-- Master-Detail Relationship configuration
-- Salesforce object relationship setup
+![Schema Builder](screenshots/schema_builder.png)
 
 ---
 
-## Data Import Mapping
+# Custom Object Relationships
 
-File:
+Created relationship fields using Salesforce Object Manager.
 
-`data_import_mapping.png`
+## Lookup Relationship
 
-Demonstrates:
+Favorite records are connected to Contacts who select favorite properties.
 
-- CSV field mapping
-- Matching external data columns to Salesforce fields
-- Preparing records for import
+## Master-Detail Relationship
 
----
+Property records act as the master object with Favorite records as related details.
 
-## Data Import Result
+Screenshot:
 
-File:
-
-`data_import_result.png`
-
-Demonstrates:
-
-- Successful data import
-- Creation of Salesforce records
+![Relationship Fields](screenshots/relationship_fields.png)
 
 ---
 
-# Skills Demonstrated
+# Data Import
 
-- Salesforce Administration fundamentals
-- Custom object configuration
-- Lookup Relationships
-- Master-Detail Relationships
+Imported Account data using Salesforce Data Import Wizard.
+
+Steps completed:
+
+- Prepared CSV data
+- Mapped CSV fields to Salesforce fields
+- Imported Account records
+- Verified imported records
+
+## Field Mapping
+
+Screenshot:
+
+![Data Import Mapping](screenshots/data_import_mapping.png)
+
+## Import Results
+
+Screenshot:
+
+![Data Import Results](screenshots/data_import_result.png)
+
+---
+
+# Salesforce Reporting
+
+Created an Account report to analyze customer data.
+
+Report includes:
+
+- Account Name
+- Industry
+- Phone
+
+Screenshot:
+
+![Customer Account Overview Report](screenshots/report.png)
+
+---
+
+# Salesforce Dashboard
+
+Created a dashboard using the Account report.
+
+Dashboard visualization:
+
+- Accounts grouped by Industry
+- Donut chart visualization
+
+Screenshot:
+
+![Customer Account Dashboard](screenshots/dashboard.png)
+
+---
+
+# Salesforce Admin Skills Demonstrated
+
+✅ Object Modeling  
+✅ Schema Builder  
+✅ Custom Relationships  
+✅ Lookup Relationships  
+✅ Master-Detail Relationships  
+✅ Data Import Wizard  
+✅ Field Mapping  
+✅ Reports  
+✅ Dashboards  
+
+---
+
+# Tools Used
+
+- Salesforce Lightning Experience
+- Salesforce Trailhead
+- Data Import Wizard
 - Schema Builder
-- Salesforce Data Import Wizard
-- CSV data preparation
-- CRM data management
-- Data quality practices
-- Business process understanding
+- Reports & Dashboards
