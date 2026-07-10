@@ -1,77 +1,143 @@
-# Salesforce CRM Configuration
+# Salesforce Administration & CRM Configuration
 
 ## Overview
 
-This folder demonstrates Salesforce CRM concepts used during SaaS customer onboarding.
+This section demonstrates Salesforce Administration concepts applied to a SaaS customer onboarding workflow.
 
-The goal is to show how customer information can be organized, managed, and supported inside a CRM system.
+The goal of this project is to show how customer information can be organized, managed, and supported inside a CRM system.
+
+The Salesforce work focuses on basic administrator responsibilities including data modeling, field configuration, data management, reporting, dashboards, and automation.
 
 ---
 
-## Salesforce Objects Used
+## Salesforce Customer Onboarding Workflow
 
-### Lead
+Customer Data
 
-Represents a potential customer entering the sales process.
+↓
+
+Salesforce Lead
+
+↓
+
+Qualified Customer
+
+↓
+
+Account + Contact
+
+↓
+
+Opportunity
+
+↓
+
+Reports & Dashboards
+
+↓
+
+Customer Support Operations
+
+---
+
+## Salesforce Admin Skills Demonstrated
+
+### Data Model
+
+Created and reviewed Salesforce object relationships using Schema Builder.
+
+Core objects:
+
+- Lead
+- Account
+- Contact
+- Opportunity
+
+Understanding:
+
+- Objects
+- Fields
+- Relationships
+- Record structure
+
+---
+
+### Custom Fields
+
+Configured custom fields to support business requirements.
 
 Example:
 
-A customer signup creates a new lead record.
+Customer Tier field on Account object.
+
+Purpose:
+
+Allow SaaS teams to categorize customers for reporting and customer management.
 
 ---
 
-### Account
+### Data Management
 
-Represents a company or customer organization.
+Practiced importing and validating customer information using CSV data.
 
----
+Skills demonstrated:
 
-### Contact
-
-Represents individuals associated with an account.
-
----
-
-### Opportunity
-
-Tracks potential sales activity and customer conversion.
+- Data Import Wizard
+- Field mapping
+- Data validation
+- Maintaining data quality
 
 ---
 
-## Salesforce Admin Concepts Practiced
+### Reports & Dashboards
 
-- Objects and fields
-- Data relationships
-- Lead lifecycle
-- Reports
-- Dashboards
-- User permissions
-- Basic Flow automation
+Created Salesforce reports and dashboards to visualize customer information.
 
----
+Examples:
 
-## Customer Lifecycle
-
-Customer Signup
-
-↓
-
-Lead Created
-
-↓
-
-Lead Qualified
-
-↓
-
-Opportunity Created
-
-↓
-
-Account + Contact Created
+- Customer records by tier
+- Customer onboarding overview
+- CRM data reporting
 
 ---
 
-## Purpose
+### Salesforce Flow
 
-This demonstrates how SaaS support and implementation teams understand CRM data structure and troubleshoot customer onboarding issues.
+Created basic automation using Flow.
+
+Example:
+
+When a new record is created, automatically create a follow-up task.
+
+Purpose:
+
+Reduce manual steps and improve onboarding consistency.
+
+---
+
+## Business Scenario
+
+A SaaS company receives new customer information through an onboarding process.
+
+Customer data must be:
+
+- Validated
+- Organized in Salesforce
+- Assigned correctly
+- Available for reporting
+- Supported by automation
+
+Salesforce acts as the CRM system used by sales and customer teams to manage customer information.
+
+---
+
+## Skills Demonstrated
+
+- Salesforce Administration fundamentals
+- CRM data modeling
+- Object and field configuration
+- Data management
+- Reports and dashboards
+- Basic Salesforce Flow
+- Customer onboarding workflows
+- Business process understanding
