@@ -4,32 +4,28 @@ Practiced Salesforce data modeling by creating custom objects and configuring re
 
 Skills demonstrated:
 
-- Creating custom objects
-- Creating Lookup Relationships
-- Creating Master-Detail Relationships
-- Understanding Salesforce object relationships
-- Managing related records
+- Custom object configuration
+- Lookup Relationships
+- Master-Detail Relationships
+- Object relationship management
+- Understanding Salesforce data structures
 
-Example:
-
-Created relationship fields that connected records between objects.
-
-Relationship types practiced:
+Relationship examples practiced:
 
 ### Lookup Relationship
 
-A flexible relationship where one object can reference another object.
+Created a relationship between Favorite and Contact.
 
-Example:
+Purpose:
 
-Favorite → Contact
+Allows Favorite records to reference related Contact records while maintaining a flexible relationship.
 
 ### Master-Detail Relationship
 
-A dependent relationship where the detail record relies on the master record.
+Created a relationship between Favorite and Property.
 
-Example:
+Purpose:
 
-Favorite → Property
+Creates a dependent relationship where the Favorite record is connected to the Property record.
 
-These concepts are important for Salesforce Administrators when designing CRM data structures and supporting business processes.
+This practice demonstrates how Salesforce Administrators configure CRM data models to support business processes.
