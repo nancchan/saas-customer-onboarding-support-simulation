@@ -1,10 +1,10 @@
-# Salesforce CRM Administration Project
+# Salesforce CRM Administration Simulation
 
 ## Project Overview
 
-This project demonstrates Salesforce Administrator fundamentals through a simulated customer data management workflow.
+This project demonstrates Salesforce Administrator fundamentals through a simulated customer onboarding and CRM data management workflow.
 
-The goal was to practice organizing CRM data, importing records, creating reports, and building dashboards to visualize customer information.
+The goal was to practice how customer information is structured, imported, validated, reported on, and used by support and implementation teams.
 
 ---
 
@@ -14,11 +14,15 @@ Customer Data (CSV)
 
 ↓
 
+Data Preparation & Validation
+
+↓
+
 Salesforce Data Import Wizard
 
 ↓
 
-Salesforce Records
+Salesforce CRM Records
 
 ↓
 
@@ -30,14 +34,15 @@ Dashboard Visualization
 
 ---
 
-# Salesforce Configuration
+# Salesforce Configuration Completed
 
 ## Schema Builder
 
-Used Salesforce Schema Builder to review and understand object relationships and CRM data structure.
+Used Salesforce Schema Builder to review CRM object structure and understand how customer information is organized.
 
-Objects included:
+Objects reviewed:
 
+- Account
 - Contact
 - Property
 - Favorite
@@ -48,9 +53,15 @@ Screenshot:
 
 ---
 
-# Field Relationships
+# Field Relationship Review
 
-Reviewed Salesforce field configuration and relationship settings using Salesforce Object Manager.
+Reviewed Salesforce field configuration and relationship fields using Salesforce Object Manager.
+
+This helped demonstrate:
+
+- Understanding of Salesforce data structure
+- How objects connect
+- How CRM information is organized
 
 Screenshot:
 
@@ -60,7 +71,7 @@ Screenshot:
 
 # Data Import
 
-Imported customer/account information into Salesforce using Data Import Wizard.
+Imported customer information into Salesforce using Data Import Wizard.
 
 Completed:
 
@@ -68,10 +79,11 @@ Completed:
 - Field mapping
 - Data validation
 - Record import
+- Import verification
 
 ---
 
-## Data Import Field Mapping
+## Data Import Mapping
 
 Screenshot:
 
@@ -89,9 +101,9 @@ Screenshot:
 
 ---
 
-# Salesforce Report
+# Salesforce Reporting
 
-Created a Salesforce report to analyze customer account information.
+Created Salesforce reports to analyze customer account information.
 
 Report fields included:
 
@@ -99,9 +111,11 @@ Report fields included:
 - Industry
 - Phone
 
+The report demonstrates how CRM data can be reviewed for business visibility and support operations.
+
 Screenshot:
 
-![Customer Account Overview Report](screenshots/report.png)
+![Salesforce Report](screenshots/report.png)
 
 ---
 
@@ -109,15 +123,19 @@ Screenshot:
 
 Created a Salesforce dashboard using report data.
 
-Dashboard includes:
+Dashboard demonstrates:
 
 - Customer account analysis
 - Industry visualization
-- Donut chart reporting
+- Business reporting
+
+Visualization used:
+
+- Donut chart
 
 Screenshot:
 
-![Customer Account Dashboard](screenshots/dashboard.png)
+![Salesforce Dashboard](screenshots/dashboard.png)
 
 ---
 
@@ -126,18 +144,20 @@ Screenshot:
 - Salesforce Lightning Experience
 - Schema Builder
 - Object Configuration
-- Field Relationships
+- Field Relationship Review
 - Data Import Wizard
 - Field Mapping
-- Reports
-- Dashboards
+- Data Validation
+- Salesforce Reports
+- Salesforce Dashboards
 - CRM Data Management
 
 ---
 
 # Tools Used
 
-- Salesforce Trailhead
 - Salesforce Lightning Experience
+- Salesforce Trailhead
 - Salesforce Object Manager
+- Salesforce Schema Builder
 - Salesforce Reports & Dashboards
