@@ -88,7 +88,7 @@ Used Postman to practice:
 
 # Salesforce CRM Administration Project
 
-A Salesforce Administration project was completed to simulate customer data management and reporting workflows.
+A Salesforce Administration simulation project was completed to demonstrate customer data management and reporting workflows.
 
 Salesforce work completed:
 
@@ -103,7 +103,86 @@ Salesforce work completed:
 
 Detailed Salesforce documentation:
 
-`Salesforce/README.md`
+[Salesforce Project Documentation](Salesforce/README.md)
+
+---
+
+# Implementation Documentation
+
+To simulate a real SaaS implementation and support workflow, additional documentation was created to demonstrate how customer data, CRM processes, testing, and troubleshooting connect together.
+
+---
+
+## Customer Onboarding Process
+
+The customer onboarding workflow documents how information moves from initial data collection through Salesforce implementation and support processes.
+
+Documentation:
+
+[Customer Onboarding Process](Documentation/customer_onboarding_flow.md)
+
+---
+
+## Troubleshooting Process
+
+A troubleshooting workflow was created to demonstrate how support teams investigate and resolve customer issues.
+
+Documentation:
+
+[Troubleshooting Process](Documentation/troubleshooting_flow.md)
+
+---
+
+## Data Mapping Documentation
+
+A data mapping document was created to show how source customer information is translated into Salesforce fields before import.
+
+The mapping demonstrates:
+
+- Source data review
+- Salesforce field matching
+- Data validation
+- Import preparation
+
+File:
+
+[Data Mapping](Documentation/data_mapping.xlsx)
+
+---
+
+## User Acceptance Testing (UAT)
+
+Test cases were created to validate that the customer onboarding workflow functions correctly.
+
+Testing includes:
+
+- Data import validation
+- Salesforce record verification
+- Report validation
+- Dashboard verification
+
+File:
+
+[UAT Test Cases](Documentation/UAT_test_cases.xlsx)
+
+---
+
+## Incident Root Cause Analysis (RCA)
+
+A simulated support incident was documented to demonstrate troubleshooting methodology.
+
+The RCA includes:
+
+- Issue description
+- Business impact
+- Investigation steps
+- Root cause
+- Resolution
+- Prevention steps
+
+File:
+
+[Incident RCA](Documentation/incident_RCA.md)
 
 ---
 
